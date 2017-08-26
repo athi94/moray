@@ -57,7 +57,7 @@ function fish_prompt
     end
 
     if test $CONDA_DEFAULT_ENV
-        printf "(%s) " (set_color blue)(basename $VIRTUAL_ENV)(set_color normal)
+        printf "(%s) " (set_color blue)(basename $CONDA_DEFAULT_ENV)(set_color normal)
     end
     
     printf '↪ '
